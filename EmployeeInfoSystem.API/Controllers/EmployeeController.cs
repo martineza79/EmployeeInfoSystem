@@ -45,7 +45,7 @@ namespace EmployeeInfoSystem.API.Controllers
                 // Business rule validation
                 if(employeeObjBs.Insert(employee))
                 {
-                    return CreatedAtRoute("defaultapi", new { id = employee.EmployeeId }, employee);
+                    return CreatedAtRoute("Defaultapi", new { id = employee.EmployeeId }, employee);
                 }
                 else
                 {
